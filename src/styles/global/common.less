@@ -8,11 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: @gray;
-  background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
-  background-position: 0 0, 0 0;
-  background-size: auto, 100% auto;
-  background-repeat: repeat, repeat-y;
   color: @black;
   font-family: @font1;
   font-size: 16px;
@@ -21,6 +16,13 @@ body {
   line-height: 1.375;
   overflow-x: hidden;
   padding-top: 147px;
+  @media @bw1660 {
+    padding-top: 111px;
+  }
+
+  @media @bw768 {
+    padding-top: 70px;
+  }
 }
 .main {
   flex: 1 0 auto;
