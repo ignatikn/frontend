@@ -5,12 +5,19 @@
         @@include('blocks/page-header.html')
   
         <main class="main">
-            
+            @@include('blocks/upcoming.html')
+            @@include('events.html')
         </main>
         
         @@include('blocks/page-footer.html')
 
-        <script src="scripts/main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="scripts/main.min.js"></script>
     </body>
 
 </html>
