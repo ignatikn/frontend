@@ -70,6 +70,7 @@ function style() {
     .pipe(gulp.dest("dist/styles"));
 }
 function js() {
+  
   return gulp
     .src("src/scripts/dev/*.js")
     .pipe(plumber())

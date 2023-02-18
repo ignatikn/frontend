@@ -4,6 +4,7 @@ navToggle.addEventListener("click", function () {
   root.classList.toggle("show-nav");
 });
 
+
 const swipers = document.querySelectorAll(".js-swiper");
 swipers.forEach(function (swpr) {
   new Swiper(swpr, {

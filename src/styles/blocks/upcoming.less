@@ -1,0 +1,36 @@
+@import "../global/mixins.less";
+
+.upcoming__container{
+    .container;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+}
+
+.upcoming__wrapper{
+    padding-top: 120px ;
+}
+
+.arrow{
+    background: transparent;
+    border: none;
+}
+
+.upcoming__link{
+    box-sizing: border-box;
+    color: @black;
+    font-family: @font1;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    text-decoration: none;
+    padding: 15px 0px 15px 40px;
+    &:hover {
+        color: @red_dark;
+      }
+}
