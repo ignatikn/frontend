@@ -1,0 +1,28 @@
+.quote{
+    font-family: @font2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @black;
+    margin: 0px;
+    @media @bw1340 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    @media @bw768 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+}
+
+.main-header{
+    &__title{
+        .quote;
+    }
+    &__description{
+        .quote;
+    }
+}

@@ -3,9 +3,26 @@
     @@include('blocks/head.html')
     <body>
         @@include('blocks/page-header.html')
-  
         <main class="main">
-            @@include('blocks/upcoming.html')
+            <div class="home">
+                <header class="main-header home__main-header">
+                    <h1 class="main-header__title">арт — пространство</h1>
+                    <div class="logo__wrapper">
+                        <svg class="logo_icon" viewBox="0 0 1920 325">
+                            <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+                        </svg>
+                    </div>
+                    <h1 class="main-header__description">для людей, горящих сердец и делом <br>
+                        место для настоящего</h1>
+
+                </header>
+                
+                @@include('blocks/offers.html', {"class": "home__offers"})
+
+                @@include('blocks/upcoming.html', {"class": "home__upcoming"})
+
+                @@include('blocks/blog-listing.html', {"class": "home__listing"})
+            </div>
         </main>
         
         @@include('blocks/page-footer.html')
